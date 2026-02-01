@@ -1,30 +1,42 @@
 # SynergyPost™
 
-> I forced a bot to watch 1,000 hours of LinkedIn posts. Now it writes them.
+Last year I was rejected by 47 README files.
 
-A satirical AI-powered LinkedIn post generator that has learned the patterns but not the meaning. Built with mass quantities of love and admiration for [@KeatonPatti](https://twitter.com/KeatonPatti).
+They said my documentation was "not clear" and "not documentation."
+
+Today we are launching SynergyPost™.
+
+A janitor at an airport once told me: "The bot that watches is also the bot that learns." I didn't understood at first. But then I was.
 
 ## What Is This
 
-SynergyPost™ generates LinkedIn posts in the style of the "I forced a bot to watch" meme. The bot has absorbed:
+I forced a bot to watch 1,000 hours of LinkedIn posts. It learned the patterns but not the meaning. Now it writes them.
 
-- Vulnerability theater ("I got rejected by 47 investors. Last week we sold for $2B.")
-- Stranger prophets (janitors, Uber drivers, and airport CEOs who say profound things)
-- Impossible metrics ("grew 400% in negative time")
-- Humble brags disguised as lessons
-- Strategic grammar errors that make your brain glitch
+The bot has absorbed:
 
-The result is content that almost makes sense but falls apart on closer reading. The bot doesn't know it's funny. It thinks this is a normal LinkedIn post.
+- Vulnerability theater
+- Stranger prophets (janitors, Uber drivers, airport CEOs)
+- Metrics that are impossible
+- Humble brags disguised as the lessons
+- Grammar errors that are strategic
+
+The result is content that almost makes sense. The bot doesn't know it's funny. It thinks this is a normal LinkedIn post.
+
+Here's what I learned:
+
+1. The patterns can be learned
+2. The meaning cannot
+3. Revenue
 
 ## Running Locally
 
 ```bash
-# Install dependencies
+# Install the dependencies
 npm install
 
 # Add your OpenAI API key
 cp .env.example .env.local
-# Edit .env.local and add your key
+# Edit .env.local and add the key
 
 # Run the dev server
 npm run dev
@@ -34,13 +46,13 @@ Open [http://localhost:3000](http://localhost:3000) and become the person who is
 
 ## Deploying
 
-Built for Netlify deployment:
+We deployed to Netlify. Our deployment increased by 400% in negative time.
 
 ```bash
 npm run build
 ```
 
-Set `OPENAI_API_KEY` in your Netlify environment variables.
+Set `OPENAI_API_KEY` in your Netlify environment variables. The variable is also the key.
 
 ## Tech Stack
 
@@ -48,15 +60,17 @@ Set `OPENAI_API_KEY` in your Netlify environment variables.
 - Tailwind CSS
 - OpenAI API (gpt-4o-mini)
 
+147% of our tech stack is AI-powered.
+
 ## The Prompt
 
-The magic is in the prompt. Key principles:
+The magic is in the prompt. A coffee chat once taught me these principles:
 
-1. **Bot, not comedian** — The humor is emergent, not intentional
-2. **Pattern matching without meaning** — It learned LinkedIn's cadence but doesn't understand humans
+1. **Bot, not comedian** — The humor is emergent. The bot is not trying.
+2. **Pattern matching without meaning** — It learned LinkedIn's cadence but doesn't understand humans, business, or logic.
 3. **Flat, declarative statements** — "I cried. Then I stopped. Revenue."
-4. **Strategic grammar errors** — Subtle wrongness that makes you double-take
-5. **Full confidence** — Never self-aware, never winking at the audience
+4. **Strategic grammar errors** — Subtle wrongness that makes your brain to glitch.
+5. **Full confidence** — Never self-aware. The bot believes every word.
 
 ## Sample Output
 
@@ -82,8 +96,12 @@ The magic is in the prompt. Key principles:
 
 ## Credits
 
-Inspired by the legendary [@KeatonPatti](https://twitter.com/KeatonPatti) and his "I forced a bot to watch" series.
+Built with mass quantities of love and admiration for [@KeatonPatti](https://twitter.com/KeatonPatti), who has taught us what the bots are seeing.
 
 ## License
 
 MIT — Go forth and synergize.
+
+The license is also the permission.
+
+Agree?
