@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               {/* Content */}
-              <div className="p-4 md:p-6 min-h-[120px] max-h-[40vh] overflow-y-auto">
+              <div className="p-4 md:p-6 min-h-[120px]">
                 {isGenerating ? (
                   <div className="text-slate-600 font-mono text-sm">
                     <span className="text-slate-400">{">"} </span>
