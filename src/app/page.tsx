@@ -114,7 +114,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950">
       {/* Hero + App Section */}
-      <section className="min-h-screen px-6 py-12 md:py-20">
+      <section className="relative overflow-hidden min-h-screen px-6 py-12 md:py-20">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -209,8 +209,8 @@ export default function Home() {
         </div>
 
         {/* Decorative blobs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 -left-20 w-48 h-48 md:w-72 md:h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-20 -right-20 w-64 h-64 md:w-96 md:h-96 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
       </section>
 
       {/* Features Section */}
