@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     title: "47 VCs rejected this bot. Now it's disrupting content.",
     description:
       "I forced a bot to watch 1,000 hours of LinkedIn posts. Generate AI-powered thought leadership that helps you become the person who is posting.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SynergyPost™ AI - AI-Powered Thought Leadership",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -39,6 +47,7 @@ export const metadata: Metadata = {
     description:
       "I forced a bot to watch 1,000 hours of LinkedIn posts. Now it's disrupting content. No thoughts required.",
     creator: "@KeatonPatti",
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,
