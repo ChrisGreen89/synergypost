@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-
 export const alt = "SynergyPost™ AI - AI-Powered Thought Leadership";
 export const size = {
   width: 1200,
