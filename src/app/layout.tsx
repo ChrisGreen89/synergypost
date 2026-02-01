@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SynergyPost™ AI | AI-Powered Thought Leadership",
   description: "Disrupt your LinkedIn with AI-generated thought leadership. Our proprietary SynergyEngine™ helps you become the person who is posting.",
-  metadataBase: new URL("https://synergypost.ai"),
+  metadataBase: new URL("https://synergypost.netlify.app"),
   keywords: [
     "thought leadership",
     "LinkedIn",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://synergypost.ai",
+    url: "https://synergypost.netlify.app",
     siteName: "SynergyPost™ AI",
     title: "47 VCs rejected this bot. Now it's disrupting content.",
     description:

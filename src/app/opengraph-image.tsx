@@ -146,7 +146,7 @@ export default async function Image() {
             fontSize: 18,
           }}
         >
-          synergypost.ai • No thoughts required
+          synergypost.netlify.app • No thoughts required
         </p>
       </div>
     ),
