@@ -64,7 +64,7 @@ export default function Home() {
       return;
     }
 
-    const currentPhrase = LOADING_PHRASES[loadingIndex % LOADING_PHRASES.length];
+    const currentPhrase = LOADING_PHRASES[loadingIndex];
     let charIndex = 0;
     setLoadingText("");
 
@@ -74,10 +74,10 @@ export default function Home() {
         charIndex++;
       } else {
         clearInterval(typeInterval);
-        // Move to next phrase after a pause
+        // Pick a random next phrase after a pause
         setTimeout(() => {
           if (isGenerating) {
-            setLoadingIndex((prev) => prev + 1);
+            setLoadingIndex(Math.floor(Math.random() * LOADING_PHRASES.length));
           }
         }, 800);
       }
@@ -112,58 +112,22 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-slate-950">
       {/* Hero + App Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white min-h-screen flex items-center">
-        {/* Fake grid background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.3) 1px, transparent 1px),
-                             linear-gradient(90deg, rgba(59, 130, 246, 0.3) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }} />
-        </div>
-
-        <div className="relative z-10 max-w-6xl mx-auto px-6 py-8 md:py-12 w-full">
-          {/* Badges */}
-          <div className="flex flex-wrap gap-2 mb-4 justify-center">
-            <span className="bg-blue-500/20 border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs font-medium">
-              🚀 #1 on ProductHunt (self-reported)
-            </span>
-            <span className="bg-purple-500/20 border border-purple-400/30 text-purple-300 px-3 py-1 rounded-full text-xs font-medium">
-              ⚡ Is Powered by AI
-            </span>
-            <span className="bg-green-500/20 border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs font-medium">
-              ✨ Winner of 14 Awards (Pending)
-            </span>
-          </div>
-
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 leading-tight">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Become The Person
-            </span>
-            {" "}
-            <span className="text-white">Who Is Thought Leading</span>
-          </h1>
-
-          <p className="text-base md:text-lg text-slate-300 text-center max-w-2xl mx-auto mb-4">
-            Our <span className="text-blue-400 font-semibold">SynergyEngine™</span> has analyzed over 10 million LinkedIn posts so you don&apos;t have to think about what you are posting it.
-          </p>
-
-          {/* Stats - compact */}
-          <div className="flex flex-wrap justify-center gap-4 mb-6">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-400">{postsGenerated.toLocaleString()}</div>
-              <div className="text-xs text-slate-400">Posts Generated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-purple-400">{thoughtLeaders.toLocaleString()}</div>
-              <div className="text-xs text-slate-400">Thought Leaders Created</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-pink-400">847%</div>
-              <div className="text-xs text-slate-400">More Engagement*</div>
-            </div>
+      <section className="min-h-screen px-6 py-12 md:py-20">
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12 md:mb-16">
+            <p className="text-slate-500 text-sm md:text-base mb-4 font-mono">
+              I forced a bot to watch 1,000 hours of LinkedIn posts.
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]">
+              47 VCs rejected this bot.<br />
+              <span className="text-slate-500">Now it&apos;s disrupting content.</span>
+            </h1>
+            <p className="text-slate-400 text-lg md:text-xl max-w-xl mx-auto">
+              A janitor at an airport once told me: &quot;The post that is written is also the post.&quot;
+            </p>
           </div>
 
           {/* Main App Area */}

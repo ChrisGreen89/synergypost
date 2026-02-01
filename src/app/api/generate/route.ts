@@ -23,6 +23,8 @@ Grammar rules (important):
   - Tense drift: "I didn't understood"
   - Sentences that stop too early: "But then I was."
   - Slightly wrong prepositions: "growing at 200% per quarterly"
+  - Adjectives as nouns / truncated words: "It was pain" instead of "It was painful", "I felt the vulnerable", "This is the important"
+  - Missing suffixes: "I was complete lost", "The success was immediate"
 - Do NOT make every sentence wrong. The post should read as 90% normal with a few moments that make your brain glitch.
 
 Pick ONE of these post archetypes randomly:

@@ -10,6 +10,40 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SynergyPost™ AI | AI-Powered Thought Leadership",
   description: "Disrupt your LinkedIn with AI-generated thought leadership. Our proprietary SynergyEngine™ helps you become the person who is posting.",
+  metadataBase: new URL("https://synergypost.ai"),
+  keywords: [
+    "thought leadership",
+    "LinkedIn",
+    "AI",
+    "content generator",
+    "synergy",
+    "disruption",
+    "startup",
+    "entrepreneur",
+  ],
+  authors: [{ name: "Definitely Real AI Corp" }],
+  creator: "SynergyPost™ AI",
+  publisher: "Definitely Real AI Corp",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://synergypost.ai",
+    siteName: "SynergyPost™ AI",
+    title: "47 VCs rejected this bot. Now it's disrupting content.",
+    description:
+      "I forced a bot to watch 1,000 hours of LinkedIn posts. Generate AI-powered thought leadership that helps you become the person who is posting.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SynergyPost™ AI | 47 VCs rejected this bot",
+    description:
+      "I forced a bot to watch 1,000 hours of LinkedIn posts. Now it's disrupting content. No thoughts required.",
+    creator: "@KeatonPatti",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
