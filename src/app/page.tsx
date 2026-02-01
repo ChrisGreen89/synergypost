@@ -195,10 +195,10 @@ export default function Home() {
               <button
                 onClick={generateSlop}
                 disabled={isGenerating}
-                className={`w-full md:w-auto px-6 py-3 text-base font-bold rounded-xl transition-all duration-300 ${
+                className={`w-full md:w-auto px-6 py-3 text-base font-bold rounded-xl ${
                   isGenerating
                     ? "bg-slate-600 text-slate-300 cursor-wait"
-                    : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-400 hover:via-purple-400 hover:to-pink-400 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105"
+                    : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 active:opacity-80 shadow-lg shadow-purple-500/25"
                 }`}
               >
                 {isGenerating ? "⏳ Synthesizing..." : output ? "🔄 Generate Another" : "✨ Generate My Post"}
