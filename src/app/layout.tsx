@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "I forced a bot to watch 1,000 hours of LinkedIn posts. Generate AI-powered thought leadership that helps you become the person who is posting.",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "SynergyPost™ AI - AI-Powered Thought Leadership",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     description:
       "I forced a bot to watch 1,000 hours of LinkedIn posts. Now it's disrupting content. No thoughts required.",
     creator: "@KeatonPatti",
-    images: ["/twitter-image"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
